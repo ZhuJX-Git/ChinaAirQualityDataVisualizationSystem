@@ -14,6 +14,7 @@
 <div class="container">
     <h2>Please create an account first!</h2>
     <form action="/registercheck/" method="POST">
+        {% csrf_token %}
         <div class="form-group">
             <label for="username">Username:</label>
             <input type="text" class="form-control" id="username" name="inputUsername" placeholder="Username" >

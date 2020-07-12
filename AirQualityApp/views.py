@@ -1,6 +1,5 @@
 from django.shortcuts import render
 from django.db import connection, transaction
-from django.views.decorators.csrf import csrf_exempt
 from django.contrib import messages
 from django.shortcuts import redirect
 from pyecharts.charts import Geo, Map
@@ -17,7 +16,6 @@ def loginpagecontroller(request):
 def registerpagecontroller(request):
     return render(request, 'RegisterPage.html')
 
-@csrf_exempt
 def logincheckcontroller(request):
     inputUsesrname = request.POST['inputUsername']
     inputPassword = request.POST['inputPassword']
@@ -33,7 +31,6 @@ def logincheckcontroller(request):
     else:
         return redirect('/home/')
 
-@csrf_exempt
 def registercheckcontroller(request):
     inputUsername = request.POST['inputUsername']
     inputPassword = request.POST['inputPassword']
