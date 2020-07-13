@@ -69,7 +69,5 @@ def homepagecontroller(request):
            .set_global_opts(title_opts=opts.TitleOpts(title='Map'))
 
            )
-    map.render(path = './templates/test.html')
-    # return render(request, map.render_embed())
     return HttpResponse(map.render_embed())
 
