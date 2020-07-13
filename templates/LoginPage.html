@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Welcome to Air Quality System, please login!</h2>
+    <form action="/logincheck/" method="POST">
+        {% csrf_token %} {# 在使用POST方法时，需要加上csrf token以防止跨站请求伪造攻击 #}
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" class="form-control" id="username" name="inputUsername" placeholder="Username" >
+        </div>
+        <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" name="inputPassword" placeholder="Enter password">
+        </div>
+        <br />
+        <input type="submit" class="btn btn-primary" value="Login">
+    </form>
+</div>
+
+{% if messages %}
+<script>
+    {% for msg in messages %}
+        alert('{{ msg.message }}')
+    {% endfor %}
+</script>
+{% endif %}
+
+</body>
+</html>
