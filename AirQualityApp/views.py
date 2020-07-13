@@ -25,7 +25,7 @@ def logincheckcontroller(request):
         [inputUsesrname, inputPassword]
     )
     fetchResult = cursor.fetchone()
-    if fetchResult == None:
+    if fetchResult is None:
         messages.error(request, 'Incorrect username or password')
         return redirect('/login/')
     else:
@@ -51,23 +51,29 @@ def registercheckcontroller(request):
     return redirect('/entry')
 
 def homepagecontroller(request):
-    value = [111, 121.6, 122, 116, 123.3, 110.4, 118.4, 116.8, 114.3,
-             113.2, 111.8, 116.8, 113.4, 113, 121.3, 118.7, 119, 117.6, 113.8,
-             115.1, 114.1, 115.2, 112.6, 114.8, 120.2, 118.2, 119.8, 114.7, 115.4,
-             114.6, 112.7]
-    attr = ['甘肃', '广东', '广西', '贵州', '海南',
-            '河南', '湖北', '湖南', '宁夏', '青海',
-            '陕西', '四川', '西藏', '新疆', '云南',
-            '重庆', '北京', '天津', '河北', '山西', '内蒙古',
-            '辽宁', '吉林', '黑龙江', '上海', '江苏', '浙江', '安徽', '福建'
-        , '江西', '山东']
-    sequence = list(zip(attr, value))
-
+    year = str(2019) + '%'
+    cursor = connection.cursor()
+    cursor.execute(
+        'SELECT "Provinces"."name" AS "Province", AVG(tmpres1."Value") AS "Value" '
+        'FROM "Cities", "Provinces", '
+        '(SELECT "Monitors"."City", AVG(tmpres0."Value") AS "Value" '
+        'FROM "Monitors", '
+        '(SELECT "Monitor" AS "ID", AVG("Value") AS "Value" '
+        'FROM "Data" '
+        'WHERE "Date" LIKE %s AND "Type" = %s '
+        'GROUP BY "Monitor") tmpres0 '
+        'WHERE "Monitors"."ID" = tmpres0."ID" '
+        'GROUP BY "Monitors"."City") tmpres1 '
+        'WHERE "Cities"."province" = "Provinces"."province" AND "Cities"."name" = tmpres1."City" '
+        'GROUP BY "Provinces"."name"',
+        [year, 'AQI']
+    )
+    fetchResult = cursor.fetchall()
+    unzip = zip(*fetchResult)
+    o1, o2 = list(unzip)
     map = (Map()
-           .add(2020, sequence, "china",)
-           # .set_global_opts(title_opts = opts.TitleOpts(title = 'Map'), visualmap_opts = opts.VisualMapOpts(max_ = 130, min_ = 95),)
-           .set_global_opts(title_opts=opts.TitleOpts(title='Map'))
-
+           .add(2020, fetchResult, "china", is_roam = False, zoom = 1.2)
+           .set_global_opts(title_opts = opts.TitleOpts(title = 'Map'), visualmap_opts = opts.VisualMapOpts(max_ = max(o2), min_ = min(o2)),)
            )
     return HttpResponse(map.render_embed())
 

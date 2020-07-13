@@ -13,11 +13,6 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:github" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
@@ -29,9 +24,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="edb9f6eb-f45d-4101-88f3-77a25a4270aa" name="Default Changelist" comment="Refactored all files">
+    <list default="true" id="edb9f6eb-f45d-4101-88f3-77a25a4270aa" name="Default Changelist" comment="Delete test.html and fix related files">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AirQualityApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/AirQualityApp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/test.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +106,9 @@
       <option name="presentableId" value="Default" />
       <updated>1594256379745</updated>
       <workItem from="1594256388369" duration="41119000" />
-      <workItem from="1594600208878" duration="785000" />
+      <workItem from="1594600208878" duration="1154000" />
+      <workItem from="1594613626544" duration="3368000" />
+      <workItem from="1594654157770" duration="4977000" />
     </task>
     <task id="LOCAL-00001" summary="Make modification to use csrf token when dealing with submitting form using POST method.">
       <created>1594581687729</created>
@@ -127,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594600856720</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Delete test.html and fix related files">
+      <created>1594601050769</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1594601050769</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,7 +162,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Make modification to use csrf token when dealing with submitting form using POST method." />
     <MESSAGE value="Refactored all files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored all files" />
+    <MESSAGE value="Delete test.html and fix related files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete test.html and fix related files" />
   </component>
   <component name="WindowStateProjectService">
     <state x="613" y="344" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594600244168">
@@ -169,34 +174,34 @@
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
     <state x="235" y="297" key="FileChooserDialogImpl/0.23.1792.1025@0.23.1792.1025" timestamp="1594354480487" />
-    <state x="317" y="439" width="615" height="450" key="Github.ShareDialog" timestamp="1594597937986">
+    <state x="317" y="439" width="615" height="450" key="Github.ShareDialog" timestamp="1594601243301">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state x="317" y="439" width="615" height="450" key="Github.ShareDialog/0.23.1792.1025@0.23.1792.1025" timestamp="1594597937986" />
+    <state x="317" y="439" width="615" height="450" key="Github.ShareDialog/0.23.1792.1025@0.23.1792.1025" timestamp="1594601243301" />
     <state x="171" y="240" key="Github.UntrackedFilesDialog" timestamp="1594567564865">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
     <state x="171" y="240" key="Github.UntrackedFilesDialog/0.23.1792.1025@0.23.1792.1025" timestamp="1594567564865" />
-    <state width="1750" height="279" key="GridCell.Tab.0.bottom" timestamp="1594600403679">
+    <state width="854" height="277" key="GridCell.Tab.0.bottom" timestamp="1594670372957">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state width="1750" height="279" key="GridCell.Tab.0.bottom/0.23.1792.1025@0.23.1792.1025" timestamp="1594600403679" />
-    <state width="1750" height="279" key="GridCell.Tab.0.center" timestamp="1594600403678">
+    <state width="854" height="277" key="GridCell.Tab.0.bottom/0.23.1792.1025@0.23.1792.1025" timestamp="1594670372957" />
+    <state width="854" height="277" key="GridCell.Tab.0.center" timestamp="1594670372957">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state width="1750" height="279" key="GridCell.Tab.0.center/0.23.1792.1025@0.23.1792.1025" timestamp="1594600403678" />
-    <state width="1750" height="279" key="GridCell.Tab.0.left" timestamp="1594600403677">
+    <state width="854" height="277" key="GridCell.Tab.0.center/0.23.1792.1025@0.23.1792.1025" timestamp="1594670372957" />
+    <state width="854" height="277" key="GridCell.Tab.0.left" timestamp="1594670372956">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state width="1750" height="279" key="GridCell.Tab.0.left/0.23.1792.1025@0.23.1792.1025" timestamp="1594600403677" />
-    <state width="1750" height="279" key="GridCell.Tab.0.right" timestamp="1594600403678">
+    <state width="854" height="277" key="GridCell.Tab.0.left/0.23.1792.1025@0.23.1792.1025" timestamp="1594670372956" />
+    <state width="854" height="277" key="GridCell.Tab.0.right" timestamp="1594670372957">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state width="1750" height="279" key="GridCell.Tab.0.right/0.23.1792.1025@0.23.1792.1025" timestamp="1594600403678" />
-    <state x="534" y="304" key="MultipleFileMergeDialog" timestamp="1594600968246">
+    <state width="854" height="277" key="GridCell.Tab.0.right/0.23.1792.1025@0.23.1792.1025" timestamp="1594670372957" />
+    <state x="534" y="304" key="MultipleFileMergeDialog" timestamp="1594601045952">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state x="534" y="304" key="MultipleFileMergeDialog/0.23.1792.1025@0.23.1792.1025" timestamp="1594600968246" />
+    <state x="534" y="304" key="MultipleFileMergeDialog/0.23.1792.1025@0.23.1792.1025" timestamp="1594601045952" />
     <state x="318" y="263" key="RollbackChangesDialog" timestamp="1594598587029">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
@@ -209,10 +214,10 @@
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
     <state x="48" y="275" key="Vcs.Push.Dialog.v2/0.23.1792.1025@0.23.1792.1025" timestamp="1594581853534" />
-    <state x="236" y="456" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594600945407">
+    <state x="236" y="456" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594601173107">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state x="236" y="456" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1792.1025@0.23.1792.1025" timestamp="1594600945407" />
+    <state x="236" y="456" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1792.1025@0.23.1792.1025" timestamp="1594601173107" />
     <state x="149" y="168" width="598" height="735" key="find.popup" timestamp="1594354921381">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
