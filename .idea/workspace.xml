@@ -24,7 +24,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="edb9f6eb-f45d-4101-88f3-77a25a4270aa" name="Default Changelist" comment="Delete test.html and fix related files">
+    <list default="true" id="edb9f6eb-f45d-4101-88f3-77a25a4270aa" name="Default Changelist" comment="Finish query: For a given year, the average air pollution value of all provinces is displayed on a national map and colored according to severity.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AirQualityApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/AirQualityApp/views.py" afterDir="false" />
     </list>
@@ -67,7 +67,7 @@
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RunManager">
     <configuration name="AirQuality" type="Python.DjangoServer" factoryName="Django server">
@@ -108,7 +108,7 @@
       <workItem from="1594256388369" duration="41119000" />
       <workItem from="1594600208878" duration="1154000" />
       <workItem from="1594613626544" duration="3368000" />
-      <workItem from="1594654157770" duration="4977000" />
+      <workItem from="1594654157770" duration="8839000" />
     </task>
     <task id="LOCAL-00001" summary="Make modification to use csrf token when dealing with submitting form using POST method.">
       <created>1594581687729</created>
@@ -131,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594601050769</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Finish query: For a given year, the average air pollution value of all provinces is displayed on a national map and colored according to severity.">
+      <created>1594670899113</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1594670899113</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,9 +170,14 @@
     <MESSAGE value="Make modification to use csrf token when dealing with submitting form using POST method." />
     <MESSAGE value="Refactored all files" />
     <MESSAGE value="Delete test.html and fix related files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete test.html and fix related files" />
+    <MESSAGE value="Finish query: For a given year, the average air pollution value of all provinces is displayed on a national map and colored according to severity." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish query: For a given year, the average air pollution value of all provinces is displayed on a national map and colored according to severity." />
   </component>
   <component name="WindowStateProjectService">
+    <state x="331" y="405" key="#Notifications" timestamp="1594671163116">
+      <screen x="0" y="23" width="1792" height="1025" />
+    </state>
+    <state x="331" y="405" key="#Notifications/0.23.1792.1025@0.23.1792.1025" timestamp="1594671163116" />
     <state x="613" y="344" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594600244168">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
@@ -182,22 +194,22 @@
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
     <state x="171" y="240" key="Github.UntrackedFilesDialog/0.23.1792.1025@0.23.1792.1025" timestamp="1594567564865" />
-    <state width="854" height="277" key="GridCell.Tab.0.bottom" timestamp="1594670372957">
+    <state width="854" height="277" key="GridCell.Tab.0.bottom" timestamp="1594690227791">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state width="854" height="277" key="GridCell.Tab.0.bottom/0.23.1792.1025@0.23.1792.1025" timestamp="1594670372957" />
-    <state width="854" height="277" key="GridCell.Tab.0.center" timestamp="1594670372957">
+    <state width="854" height="277" key="GridCell.Tab.0.bottom/0.23.1792.1025@0.23.1792.1025" timestamp="1594690227791" />
+    <state width="854" height="277" key="GridCell.Tab.0.center" timestamp="1594690227790">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state width="854" height="277" key="GridCell.Tab.0.center/0.23.1792.1025@0.23.1792.1025" timestamp="1594670372957" />
-    <state width="854" height="277" key="GridCell.Tab.0.left" timestamp="1594670372956">
+    <state width="854" height="277" key="GridCell.Tab.0.center/0.23.1792.1025@0.23.1792.1025" timestamp="1594690227790" />
+    <state width="854" height="277" key="GridCell.Tab.0.left" timestamp="1594690227790">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state width="854" height="277" key="GridCell.Tab.0.left/0.23.1792.1025@0.23.1792.1025" timestamp="1594670372956" />
-    <state width="854" height="277" key="GridCell.Tab.0.right" timestamp="1594670372957">
+    <state width="854" height="277" key="GridCell.Tab.0.left/0.23.1792.1025@0.23.1792.1025" timestamp="1594690227790" />
+    <state width="854" height="277" key="GridCell.Tab.0.right" timestamp="1594690227791">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state width="854" height="277" key="GridCell.Tab.0.right/0.23.1792.1025@0.23.1792.1025" timestamp="1594670372957" />
+    <state width="854" height="277" key="GridCell.Tab.0.right/0.23.1792.1025@0.23.1792.1025" timestamp="1594690227791" />
     <state x="534" y="304" key="MultipleFileMergeDialog" timestamp="1594601045952">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
@@ -206,21 +218,25 @@
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
     <state x="318" y="263" key="RollbackChangesDialog/0.23.1792.1025@0.23.1792.1025" timestamp="1594598587029" />
-    <state x="63" y="209" key="SettingsEditor" timestamp="1594600376790">
+    <state x="63" y="209" key="SettingsEditor" timestamp="1594671027911">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state x="63" y="209" key="SettingsEditor/0.23.1792.1025@0.23.1792.1025" timestamp="1594600376790" />
-    <state x="48" y="275" key="Vcs.Push.Dialog.v2" timestamp="1594581853534">
+    <state x="63" y="209" key="SettingsEditor/0.23.1792.1025@0.23.1792.1025" timestamp="1594671027911" />
+    <state x="48" y="275" key="Vcs.Push.Dialog.v2" timestamp="1594671182217">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state x="48" y="275" key="Vcs.Push.Dialog.v2/0.23.1792.1025@0.23.1792.1025" timestamp="1594581853534" />
-    <state x="236" y="456" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594601173107">
+    <state x="48" y="275" key="Vcs.Push.Dialog.v2/0.23.1792.1025@0.23.1792.1025" timestamp="1594671182217" />
+    <state x="236" y="456" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594671158145">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
-    <state x="236" y="456" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1792.1025@0.23.1792.1025" timestamp="1594601173107" />
+    <state x="236" y="456" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1792.1025@0.23.1792.1025" timestamp="1594671158145" />
     <state x="149" y="168" width="598" height="735" key="find.popup" timestamp="1594354921381">
       <screen x="0" y="23" width="1792" height="1025" />
     </state>
     <state x="149" y="168" width="598" height="735" key="find.popup/0.23.1792.1025@0.23.1792.1025" timestamp="1594354921381" />
+    <state x="113" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1594671106837">
+      <screen x="0" y="23" width="1792" height="1025" />
+    </state>
+    <state x="113" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1792.1025@0.23.1792.1025" timestamp="1594671106837" />
   </component>
 </project>
