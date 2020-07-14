@@ -24,5 +24,6 @@ urlpatterns = [
     path('register/', views.registerpagecontroller),
     path('logincheck/', views.logincheckcontroller),
     path('registercheck/', views.registercheckcontroller),
-    path('home/', views.homepagecontroller),
+    path('query1/', views.query1controller),
+    path('query2/', views.query2controller),
 ]
