@@ -5,6 +5,8 @@ from django.shortcuts import redirect
 from pyecharts.charts import Map, Timeline, Line
 from pyecharts import options as opts
 from django.http import HttpResponse
+from pyecharts.render import make_snapshot
+from snapshot_selenium import snapshot
 
 
 # Create your views here.
@@ -103,7 +105,7 @@ def query1controller(request):
 # 对于给定的省/城市，以折线图的形式显示2014～2020年各项空气质量指数的变化
 def query2controller(request):
     # 给定的省份和城市，城市可选，不指定城市的话可以按照省份进行数据筛选
-    province, city = '四川', '成都'
+    province, city = '北京', '北京'
     cursor = connection.cursor()
     # 第一步获取时间跨度
     cursor.execute(
@@ -177,8 +179,7 @@ def query2controller(request):
         ),
         xaxis_opts = opts.AxisOpts(type_ = "category", boundary_gap = False),
     )
-    return HttpResponse(line.render_embed())
-
-
+    line.render('templates/line.html')
+    return render(request, 'HomePage.html')
 
 
