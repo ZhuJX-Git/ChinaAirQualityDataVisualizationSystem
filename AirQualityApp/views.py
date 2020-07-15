@@ -179,7 +179,7 @@ def query2controller(request):
         ),
         xaxis_opts = opts.AxisOpts(type_ = "category", boundary_gap = False),
     )
-    line.render('templates/line.html')
-    return render(request, 'HomePage.html')
+    line.render('templates/line.html') # 将查询结果的图表存为单独的一个html文件
+    return render(request, 'HomePage.html') # 在返回的这个html中包含上面的查询结果
 
 
